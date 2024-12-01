@@ -35,7 +35,7 @@ $(document).ready(function () {
     });
 });
 $("#history li").click(function () {
-   location.href='../html/search.html'
+    window.location.href='../html/search.html'
    
 })
 
