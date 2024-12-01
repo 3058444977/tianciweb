@@ -35,7 +35,8 @@ $(document).ready(function () {
     });
 });
 $("#history li").click(function () {
-    window.location.href='/tianciweb/html/search.html'
+    console.log( window.location.href='tianciweb/html/search.html')
+    window.location.href='tianciweb/html/search.html'
    
 })
 
