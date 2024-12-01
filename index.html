@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <div class="naviTop">
+                <!-- 左边logo -->
+                <div class="navigoTop-left">
+                    <div class="navigoTop-left-logo">
+                        <svg viewBox="0 0 182 49" width="110" height="49" xmlns="http://www.w3.org/2000/svg"
+                            version="1.1" role="img">
+                            <title>メルカリ</title>
+                            <g id="mercari-logo">
+                                <path fill="#ff0211" fill-rule="evenodd"
+                                    d="M42.65,14.15l0,21a3.55,3.55,0,0,1-2,3.17l-17.8,8.59a3.54,3.54,0,0,1-3.08,0L9.25,41.82,2,38.27A3.51,3.51,0,0,1,0,35.1l0-21a3.5,3.5,0,0,1,2-3.14L19.79,2.07a3.55,3.55,0,0,1,3.16,0L40.71,11A3.53,3.53,0,0,1,42.65,14.15Z">
+                                </path>
+                                <rect fill="var(--component-mercari-logo-text-color)" x="177.42" y="17.11" width="4.35"
+                                    height="18.64"></rect>
+                                <path fill="var(--component-mercari-logo-text-color)"
+                                    d="M130.76,32.16c-3.66,0-5.8-2.27-5.8-5.45s1.65-5.72,5.5-5.72a13.13,13.13,0,0,1,5.73,1.37V18.29a15,15,0,0,0-5.81-1.19c-5.92,0-9.69,4.08-9.69,9.61s4.11,9.19,10,9.19a15.89,15.89,0,0,0,5.92-1.18v-4A15,15,0,0,1,130.76,32.16Z">
+                                </path>
+                                <path fill="var(--component-mercari-logo-text-color)"
+                                    d="M74,17.11A7,7,0,0,0,68.14,20a7.39,7.39,0,0,0-6-2.89c-4.74,0-8,3.58-8,8.33V35.75h4.29V25c0-2.28,1.38-4,3.72-4A3.76,3.76,0,0,1,66,25V35.75h4.21V25A3.7,3.7,0,0,1,74,21a3.79,3.79,0,0,1,3.91,4V35.75h4.29V25.44A8,8,0,0,0,74,17.11Z">
+                                </path>
+                                <circle fill="var(--component-mercari-logo-text-color)" cx="179.59" cy="12.66" r="2.41">
+                                </circle>
+                                <path fill="var(--component-mercari-logo-text-color)"
+                                    d="M149.47,17.11A9.12,9.12,0,0,0,140,26.49c0,5.52,3.73,9.38,9.06,9.38a5.84,5.84,0,0,0,5.41-3.16v3h4.28V26.49C158.76,20.8,155.17,17.11,149.47,17.11Zm0,15c-3.15,0-5.11-2.15-5.11-5.62,0-3.2,2.2-5.61,5.11-5.61,3.1,0,5,2.2,5,5.61C154.44,29.21,152.74,32.11,149.43,32.11Z">
+                                </path>
+                                <path fill="var(--component-mercari-logo-text-color)"
+                                    d="M116.31,21c-2.35,0-3.73,1.95-3.73,4.54V35.75h-4.29V25.44c0-4.75,3.27-8.33,8-8.33h1.55V21Z">
+                                </path>
+                                <path fill="var(--component-mercari-logo-text-color)"
+                                    d="M171.45,21c-2.35,0-3.73,1.95-3.73,4.54V35.75h-4.29V25.44c0-4.75,3.27-8.33,8-8.33H173V21Z">
+                                </path>
+                                <path fill="var(--component-mercari-logo-text-color)"
+                                    d="M95.46,17.1a9.16,9.16,0,0,0-9.24,9.43c0,5.86,4.2,9.34,10,9.34A20.69,20.69,0,0,0,103,34.68V30.92a20.17,20.17,0,0,1-6.58,1.41C93.2,32.33,91,30.9,90.54,28h13a15.14,15.14,0,0,0,.13-2.07A8.54,8.54,0,0,0,95.46,17.1Zm-4.88,7.54a4.76,4.76,0,0,1,9.39,0Z">
+                                </path>
+                                <circle fill="#4dc9ff" cx="36.03" cy="14.65" r="9.56"></circle>
+                                <path fill="#fff"
+                                    d="M5.87,32.15,4,31.23V25.7c0-1.62.91-3.24,2.79-3.05a4.75,4.75,0,0,1,3.54,2.75,2.4,2.4,0,0,1,2.13-.6c1,.13,4.59,1.48,4.59,6.39V37.7l-2.05-1V30.58a3.25,3.25,0,0,0-2.57-3.44c-.61-.06-1.14.43-1.15,1.48s0,6.21,0,6.21L9.4,33.91V28.12c0-2.55-1.65-3.34-2.37-3.42-.41,0-1.16.21-1.16,1.52Z">
+                                </path>
+                            </g>
+                        </svg>
+                    </div>
+
+                </div>
+                <!-- 左边logo -->
+                <!-- 中间搜索框 -->
+                <div class="navigoTop-input">
+                    <form action="" class="ftyHYg" id="ftyHYg">
+                        <input type="text" class="cjcIyR" placeholder="您要搜索什么？">
+                        <button class="navigoTop-search" type="button" role="button" aria-label="検索">
+                            <div class="childContainer__d01ad679">
+                                <div class="merIcon" aria-hidden="true"><svg width="20" height="20"
+                                        class="icon__386b8057 primary__386b8057" fill-rule="evenodd"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M20.79,19.8l-3.94-3.94a7.86,7.86,0,1,0-1,1l3.94,3.94a.7.7,0,0,0,.5.21.67.67,0,0,0,.49-.21A.69.69,0,0,0,20.79,19.8ZM6.28,15.39a6.44,6.44,0,1,1,9.11,0,6.43,6.43,0,0,1-9.11,0Z">
+                                        </path>
+                                    </svg></div>
+                            </div>
+                        </button>
+                    </form>
+                    <div id="history">
+                        <ul id="historyTop">
+                            <li><span>按类别搜索</span><svg width="16" height="16" fill-rule="evenodd" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.93,2.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l8,8a.41.41,0,0,1,0,.58l-8,8a1,1,0,0,0,1.41,1.42l8-8a2.43,2.43,0,0,0,0-3.42Z">
+                                    </path>
+                                </svg></li>
+                            <li><span>按品牌搜索</span><svg width="16" height="16" fill-rule="evenodd" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.93,2.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l8,8a.41.41,0,0,1,0,.58l-8,8a1,1,0,0,0,1.41,1.42l8-8a2.43,2.43,0,0,0,0-3.42Z">
+                                    </path>
+                                </svg></li>
+                        </ul>
+                        <div class="history-title"><span>搜索历史</span><a>清除</a></div>
+
+                        <ul id="historyBottom">
+                            <li><span>手机</span><svg width="16" height="16" fill-rule="evenodd" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.93,2.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l8,8a.41.41,0,0,1,0,.58l-8,8a1,1,0,0,0,1.41,1.42l8-8a2.43,2.43,0,0,0,0-3.42Z">
+                                    </path>
+                                </svg></li>
+                            <li><span>电话</span><svg width="16" height="16" fill-rule="evenodd" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.93,2.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l8,8a.41.41,0,0,1,0,.58l-8,8a1,1,0,0,0,1.41,1.42l8-8a2.43,2.43,0,0,0,0-3.42Z">
+                                    </path>
+                                </svg></li>
+                            <li><span>测试</span><svg width="16" height="16" fill-rule="evenodd" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.93,2.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l8,8a.41.41,0,0,1,0,.58l-8,8a1,1,0,0,0,1.41,1.42l8-8a2.43,2.43,0,0,0,0-3.42Z">
+                                    </path>
+                                </svg></li>
+                            <li><span>电脑</span><svg width="16" height="16" fill-rule="evenodd" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.93,2.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l8,8a.41.41,0,0,1,0,.58l-8,8a1,1,0,0,0,1.41,1.42l8-8a2.43,2.43,0,0,0,0-3.42Z">
+                                    </path>
+                                </svg></li>
+                                <li><span>课本</span><svg width="16" height="16" fill-rule="evenodd" viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.93,2.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l8,8a.41.41,0,0,1,0,.58l-8,8a1,1,0,0,0,1.41,1.42l8-8a2.43,2.43,0,0,0,0-3.42Z">
+                                    </path>
+                                </svg></li>
+                        </ul>
+                        <div id="help"><span>搜索帮助</span><svg width="20" height="20" fill="#0073cc" viewBox="0 0 24 24">
+                                <path
+                                    d="M9.93,2.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42l8,8a.41.41,0,0,1,0,.58l-8,8a1,1,0,0,0,1.41,1.42l8-8a2.43,2.43,0,0,0,0-3.42Z">
+                                </path>
+                            </svg></div>
+                    </div>
+                </div>
+                <!-- 中间搜索框 -->
+                <div class="navigoTop-right">
+                    <ul class="navigoTop-right-list">
+                        <li class="navigoTop-right-item" style="margin-right: 0;"><img src="../img/avatar.jpg" alt=""
+                                id="avatar"></li>
+                        <li class="navigoTop-right-item" id="Myorders"><a href="#">我的订单</a></li>
+                        <li class="navigoTop-right-item nav">下单流程</li>
+                        <li class="navigoTop-right-item nav">收费标准</li>
+                        <li class="navigoTop-right-item nav" id="goods">购买须知</li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+        <!-- <p>返回</p> -->
+        <main>
+            <aside>
+                <div class="classifyTitle"><span>商品分类</span><span>清除</span></div>
+                <ul class="classify" id="accordion">
+                    <li class="accordion-item">
+                        <div class="accordion-title">
+                            <span>分类</span>
+                            <span class="iconRight"><svg width="16" height="16"  fill-rule="evenodd" viewBox="0 0 24 24"><path d="M13.67,6.45a2.46,2.46,0,0,0-3.42,0l-8,8a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l8-8a.35.35,0,0,1,.58,0l8,8.1a1,1,0,1,0,1.42-1.41Z"></path></svg></span>
+                        </div>
+                        <div class="accordion-content">
+                            <select id="category-select">
+                                <option value="all" selected>全部</option>
+                                <option value="clothes">服装</option>
+                                <option value="electronics">电子产品</option>
+                                <option value="books">书籍</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-title">
+                            <span>品牌</span>
+                            <span class="iconRight"><svg width="16" height="16"  fill-rule="evenodd" viewBox="0 0 24 24"><path d="M13.67,6.45a2.46,2.46,0,0,0-3.42,0l-8,8a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l8-8a.35.35,0,0,1,.58,0l8,8.1a1,1,0,1,0,1.42-1.41Z"></path></svg></span>
+                        </div>
+                        <div class="accordion-content">
+                            <select id="category-select"  >
+                                <option value="all" selected>全部</option>
+                                <option value="clothes">服装</option>
+                                <option value="electronics">电子产品</option>
+                                <option value="books">书籍</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="accordion-item">     <div class="accordion-title">
+                        <span>尺寸</span>
+                        <span class="iconRight"><svg width="16" height="16"  fill-rule="evenodd" viewBox="0 0 24 24"><path d="M13.67,6.45a2.46,2.46,0,0,0-3.42,0l-8,8a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l8-8a.35.35,0,0,1,.58,0l8,8.1a1,1,0,1,0,1.42-1.41Z"></path></svg></span>
+                    </div>
+                    <div class="accordion-content">
+                        <select id="category-select"  >
+                            <option value="all" selected>全部</option>
+                            <option value="clothes">服装</option>
+                            <option value="electronics">电子产品</option>
+                            <option value="books">书籍</option>
+                        </select>
+                    </div></li>
+                    <li class="accordion-item">
+                        <div class="accordion-title">
+                            <span>销售情况</span>
+                            <span class="iconRight"><svg width="16" height="16"  fill-rule="evenodd" viewBox="0 0 24 24"><path d="M13.67,6.45a2.46,2.46,0,0,0-3.42,0l-8,8a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l8-8a.35.35,0,0,1,.58,0l8,8.1a1,1,0,1,0,1.42-1.41Z"></path></svg></span>
+                        </div>
+                        <div class="accordion-content">
+                            <select id="category-select"  >
+                                <option value="all" selected>全部</option>
+                                <option value="clothes">服装</option>
+                                <option value="electronics">电子产品</option>
+                                <option value="books">书籍</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-title">
+                            <span>品牌</span>
+                            <span class="iconRight"><svg width="16" height="16"  fill-rule="evenodd" viewBox="0 0 24 24"><path d="M13.67,6.45a2.46,2.46,0,0,0-3.42,0l-8,8a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l8-8a.35.35,0,0,1,.58,0l8,8.1a1,1,0,1,0,1.42-1.41Z"></path></svg></span>
+                        </div>
+                        <div class="accordion-content">
+                            <select id="category-select"  >
+                                <option value="all" selected>全部</option>
+                                <option value="clothes">服装</option>
+                                <option value="electronics">电子产品</option>
+                                <option value="books">书籍</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-title">
+                            <span>价格区间</span>
+                            <span class="iconRight"><svg width="16" height="16"  fill-rule="evenodd" viewBox="0 0 24 24"><path d="M13.67,6.45a2.46,2.46,0,0,0-3.42,0l-8,8a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l8-8a.35.35,0,0,1,.58,0l8,8.1a1,1,0,1,0,1.42-1.41Z"></path></svg></span>
+                        </div>
+                        <div class="accordion-content">
+                            <select id="category-select"  >
+                                <option value="all" selected>全部</option>
+                                <option value="clothes">服装</option>
+                                <option value="electronics">电子产品</option>
+                                <option value="books">书籍</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-title">
+                            <span>安全鉴定</span>
+                            <span class="iconRight"><svg width="16" height="16"  fill-rule="evenodd" viewBox="0 0 24 24"><path d="M13.67,6.45a2.46,2.46,0,0,0-3.42,0l-8,8a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l8-8a.35.35,0,0,1,.58,0l8,8.1a1,1,0,1,0,1.42-1.41Z"></path></svg></span>
+                        </div>
+                        <div class="accordion-content">
+                            <select id="category-select"  >
+                                <option value="all" selected>全部</option>
+                                <option value="clothes">服装</option>
+                                <option value="electronics">电子产品</option>
+                                <option value="books">书籍</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-title">
+                            <span>颜色</span>
+                            <span class="iconRight"><svg width="16" height="16"  fill-rule="evenodd" viewBox="0 0 24 24"><path d="M13.67,6.45a2.46,2.46,0,0,0-3.42,0l-8,8a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l8-8a.35.35,0,0,1,.58,0l8,8.1a1,1,0,1,0,1.42-1.41Z"></path></svg></span>
+                        </div>
+                        <div class="accordion-content">
+                            <select id="category-select"  >
+                                <option value="all" selected>全部</option>
+                                <option value="clothes">服装</option>
+                                <option value="electronics">电子产品</option>
+                                <option value="books">书籍</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-title">
+                            <span>发货方式</span>
+                            <span class="iconRight"><svg width="16" height="16"  fill-rule="evenodd" viewBox="0 0 24 24"><path d="M13.67,6.45a2.46,2.46,0,0,0-3.42,0l-8,8a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l8-8a.35.35,0,0,1,.58,0l8,8.1a1,1,0,1,0,1.42-1.41Z"></path></svg></span>
+                        </div>
+                        <div class="accordion-content">
+                            <select id="category-select"  >
+                                <option value="all" selected>全部</option>
+                                <option value="clothes">服装</option>
+                                <option value="electronics">电子产品</option>
+                                <option value="books">书籍</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="accordion-item">
+                        <div class="accordion-title">
+                            <span>运费负担</span>
+                            <span class="iconRight"><svg width="16" height="16"  fill-rule="evenodd" viewBox="0 0 24 24"><path d="M13.67,6.45a2.46,2.46,0,0,0-3.42,0l-8,8a1,1,0,0,0,0,1.42,1,1,0,0,0,1.41,0l8-8a.35.35,0,0,1,.58,0l8,8.1a1,1,0,1,0,1.42-1.41Z"></path></svg></span>
+                        </div>
+                        <div class="accordion-content">
+                            <select id="category-select"  >
+                                <option value="all" selected>全部</option>
+                                <option value="clothes">服装</option>
+                                <option value="electronics">电子产品</option>
+                                <option value="books">书籍</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <article>
+                <div class="arcticleTitle">
+                    <p>人气商品</p>
+                    <p>查看全部</p>
+                </div>
+                <div class="goodsItem">
+                    <div class="item">
+                       <div class="imgBgk"> <img src="../img/相机.jpg" alt=""></div>
+                        <p>胶片相机</p>
+                    </div>
+                    <div class="item">
+                        <div class="imgBgk"> <img src="../img/周边.jpg" alt=""></div>
+                         <p>动漫周边</p>
+                     </div>
+                     <div class="item">
+                        <div class="imgBgk"> <img src="../img/明星.jpg" alt=""></div>
+                         <p>明星小卡</p>
+                     </div>
+                     <div class="item">
+                        <div class="imgBgk"> <img src="../img/玩具.jpg" alt=""></div>
+                         <p>玩具手办</p>
+                     </div>
+                     <div class="item">
+                        <div class="imgBgk"> <img src="../img/包.jpg" alt=""></div>
+                         <p>服饰包包</p>
+                     </div>
+                     <div class="item">
+                        <div class="imgBgk"> <img src="../img/游戏卡.jpg" alt=""></div>
+                         <p>游戏卡背</p>
+                     </div>
+                </div>
+                <div class="arcticleTitle">
+                    <p>最近浏览商品</p>
+                    <p>查看全部</p>
+                </div>
+                <div class="products">
+                    <div class="item">
+                        <div class="productsimg"> 
+                            <img src="../img/productsimg1.jpg" alt="">
+                            <div class="priceContainer"><span class="number">¥2,999</span></div>
+                        </div>
+                         <p>奇跡のコーチング クラウディオ・ラニエリ伝記</p>
+                     </div>
+                     <div class="item">
+                        <div class="productsimg"> 
+                            <img src="../img/productsimg2.jpg" alt="">
+                            <div class="priceContainer"><span class="number">¥6,880</span></div>
+                        </div>
+                         <p>レア】adidas アディダス トラックジャケット マンチェスター ユナイテッド</p>
+                     </div>
+                     <div class="item">
+                        <div class="productsimg"> 
+                            <img src="../img/productsimg3.jpg" alt="">
+                            <div class="priceContainer"><span class="number">¥14,000</span></div>
+                        </div>
+                         <p>COACH 長財布 新品 ブラウン ブラックマルチ リストレット レディース</p>
+                     </div>
+                     <div class="item">
+                        <div class="productsimg"> 
+                            <img src="../img/productsimg4.jpg" alt="">
+                            <div class="priceContainer"><span class="number">¥888,88</span></div>
+                        </div>
+                         <p>FANTASYBOYS ウソク EVERLINE 特典トレカ</p>
+                     </div>
+                     <div class="item">
+                        <div class="productsimg"> 
+                            <img src="../img/productsimg5.jpg" alt="">
+                            <div class="priceContainer"><span class="number">¥2,999</span></div>
+                        </div>
+                         <p>✨今直ぐ使える✨一眼レフカメラ Canon EOS Kiss X7 レンズセットのサムネイル</p>
+                     </div>
+ 
+                </div>
+                <div class="arcticleTitle">
+                    <p>点赞商品</p>
+                    <p>查看全部</p>
+                </div>
+                <div class="products">
+                    <div class="item">
+                        <div class="productsimg"> 
+                            <img src="../img/like1.jpg" alt="">
+                            <div class="priceContainer"><span class="number">¥2,999</span></div>
+                            <div class="priceContainerRight"><svg t="1732935454645" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4276" width="32" height="32"><path d="M512 901.746939c-13.583673 0-26.122449-4.179592-37.093878-13.061225-8.881633-7.314286-225.697959-175.020408-312.424489-311.379592C133.746939 532.37551 94.040816 471.24898 94.040816 384.522449c0-144.718367 108.146939-262.269388 240.326531-262.269388 67.395918 0 131.657143 30.82449 177.632653 84.636735 45.453061-54.334694 109.191837-84.636735 177.110204-84.636735 132.702041 0 240.326531 117.55102 240.326531 262.269388 0 85.159184-37.093878 143.673469-67.395919 191.216327l-1.044898 1.567346c-86.726531 136.359184-303.542857 304.587755-312.424489 311.379592-10.44898 8.359184-22.987755 13.061224-36.571429 13.061225z" fill="#E5404F" p-id="4277"></path></svg></div>
+                        </div>
+                         <p>Nikon Coolpix B500動作確認済み35mm換算900mm望遠レンズ</p>
+                     </div>
+                     <div class="item">
+                        <div class="productsimg"> 
+                            <img src="../img/like2.jpg" alt="">
+                            <div class="priceContainer"><span class="number">¥6,880</span></div>
+                            <div class="priceContainerRight"><svg t="1732935454645" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4276" width="32" height="32"><path d="M512 901.746939c-13.583673 0-26.122449-4.179592-37.093878-13.061225-8.881633-7.314286-225.697959-175.020408-312.424489-311.379592C133.746939 532.37551 94.040816 471.24898 94.040816 384.522449c0-144.718367 108.146939-262.269388 240.326531-262.269388 67.395918 0 131.657143 30.82449 177.632653 84.636735 45.453061-54.334694 109.191837-84.636735 177.110204-84.636735 132.702041 0 240.326531 117.55102 240.326531 262.269388 0 85.159184-37.093878 143.673469-67.395919 191.216327l-1.044898 1.567346c-86.726531 136.359184-303.542857 304.587755-312.424489 311.379592-10.44898 8.359184-22.987755 13.061224-36.571429 13.061225z" fill="#E5404F" p-id="4277"></path></svg></div>
+                        </div>
+                         <p>USA製ニューヨークハットAntique Spitfire革製ビンテージM新品</p>
+                     </div>
+                     <div class="item">
+                        <div class="productsimg"> 
+                            <img src="../img/like3.jpg" alt="">
+                            <div class="priceContainer"><span class="number">¥14,000</span></div>
+                            <div class="priceContainerRight"><svg t="1732935454645" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4276" width="32" height="32"><path d="M512 901.746939c-13.583673 0-26.122449-4.179592-37.093878-13.061225-8.881633-7.314286-225.697959-175.020408-312.424489-311.379592C133.746939 532.37551 94.040816 471.24898 94.040816 384.522449c0-144.718367 108.146939-262.269388 240.326531-262.269388 67.395918 0 131.657143 30.82449 177.632653 84.636735 45.453061-54.334694 109.191837-84.636735 177.110204-84.636735 132.702041 0 240.326531 117.55102 240.326531 262.269388 0 85.159184-37.093878 143.673469-67.395919 191.216327l-1.044898 1.567346c-86.726531 136.359184-303.542857 304.587755-312.424489 311.379592-10.44898 8.359184-22.987755 13.061224-36.571429 13.061225z" fill="#E5404F" p-id="4277"></path></svg></div>
+                        </div>
+                         <p>【美品】FRED PERRY ベージュ 長袖Tシャツ</p>
+                     </div>
+                     <div class="item">
+                        <div class="productsimg"> 
+                            <img src="../img/like4.jpg" alt="">
+                            <div class="priceContainer"><span class="number">¥888,88</span></div>
+                            <div class="priceContainerRight"><svg t="1732935454645" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4276" width="32" height="32"><path d="M512 901.746939c-13.583673 0-26.122449-4.179592-37.093878-13.061225-8.881633-7.314286-225.697959-175.020408-312.424489-311.379592C133.746939 532.37551 94.040816 471.24898 94.040816 384.522449c0-144.718367 108.146939-262.269388 240.326531-262.269388 67.395918 0 131.657143 30.82449 177.632653 84.636735 45.453061-54.334694 109.191837-84.636735 177.110204-84.636735 132.702041 0 240.326531 117.55102 240.326531 262.269388 0 85.159184-37.093878 143.673469-67.395919 191.216327l-1.044898 1.567346c-86.726531 136.359184-303.542857 304.587755-312.424489 311.379592-10.44898 8.359184-22.987755 13.061224-36.571429 13.061225z" fill="#E5404F" p-id="4277"></path></svg></div>
+                        </div>
+                         <p>陶磁器（白磁） 日本製 白い平皿（２枚セット）</p>
+                     </div>
+                     <div class="item">
+                        <div class="productsimg"> 
+                            <img src="../img/like5.jpg" alt="">
+                            <div class="priceContainer"><span class="number">¥2,999</span></div>
+                            <div class="priceContainerRight"><svg t="1732935454645" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4276" width="32" height="32"><path d="M512 901.746939c-13.583673 0-26.122449-4.179592-37.093878-13.061225-8.881633-7.314286-225.697959-175.020408-312.424489-311.379592C133.746939 532.37551 94.040816 471.24898 94.040816 384.522449c0-144.718367 108.146939-262.269388 240.326531-262.269388 67.395918 0 131.657143 30.82449 177.632653 84.636735 45.453061-54.334694 109.191837-84.636735 177.110204-84.636735 132.702041 0 240.326531 117.55102 240.326531 262.269388 0 85.159184-37.093878 143.673469-67.395919 191.216327l-1.044898 1.567346c-86.726531 136.359184-303.542857 304.587755-312.424489 311.379592-10.44898 8.359184-22.987755 13.061224-36.571429 13.061225z" fill="#E5404F" p-id="4277"></path></svg></div>
+                        </div>
+                         <p>MICHAEL KORS ショルダーバッグ ブラウン/ピンク</p>
+                     </div>
+ 
+                </div>
+            </article>
+        </main>
+        <footer>
+           <div class="footer-content"><section class="sc-86a32835-1 hBQKpa"><p class="merText body__5616e150 primary__5616e150 bold__5616e150 mer-spacing-b-16">メルカリについて</p><ul class="sc-86a32835-2 bcwZpz"><li><a target="_blank" rel="noopener noreferrer" href="https://about.mercari.com/">会社概要（運営会社）</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://careers.mercari.com/jp/">採用情報</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://about.mercari.com/press/news/">プレスリリース</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://jp-news.mercari.com/">公式ブログ</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://about.mercari.com/press/press-kit/mercari/">プレスキット</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://mercari.com/">メルカリUS</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://mercari-shops.com">メルカリShops</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://souzoh.com">メルカリShops会社概要（運営会社）</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://souzoh.com/news">メルカリShopsプレスリリース</a></li></ul></section><section class="sc-86a32835-1 hBQKpa"><p class="merText body__5616e150 primary__5616e150 bold__5616e150 mer-spacing-b-16">ヘルプ</p><ul class="sc-86a32835-2 bcwZpz"><li><a target="_blank" rel="noopener noreferrer" href="https://help.jp.mercari.com">ヘルプセンター（ガイド・お問い合わせ）</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://support.mercari-shops.com/hc/ja">メルカリShops出店者向けガイド</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://help.jp.mercari.com/cases">お問い合わせ一覧</a></li><li><a href="/keywords">フリーワードから商品をさがす</a></li></ul></section><section class="sc-86a32835-1 hBQKpa"><p class="merText body__5616e150 primary__5616e150 bold__5616e150 mer-spacing-b-16">プライバシーと利用規約</p><ul class="sc-86a32835-2 bcwZpz"><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/privacy">プライバシーポリシー</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/cookie_policy">外部送信ポリシー</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/tos">メルカリ利用規約</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://support.mercari-shops.com/hc/ja/articles/900005891046">メルカリShops利用規約</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/merpay_tos">メルペイ利用規約</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/mercard_tos">メルカード利用規約</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/money_lending_tos">メルペイスマートマネー利用規約</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/money_lending_privacy">メルペイスマートマネープライバシーポリシー</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/ambassador/tos">メルカリアンバサダー利用規約</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/mycollection/tos">メルカリ My Collection 利用規約</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/money_lending_digital_agreement">電磁交付規約</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/compliance">コンプライアンスポリシー</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/data_security">個人データの安全管理に係る基本方針</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/tokutei">特定商取引に関する表記</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/shikin_kessai">資金決済法に基づく表示</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://about.mercari.com/sustainability/safe-secure-and-fair-transactions/">法令順守と犯罪抑止のために</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/safe/description">メルカリあんしん・あんぜん宣言！</a></li><li><a target="_blank" rel="noopener noreferrer" href="https://static.jp.mercari.com/authenticity">偽ブランド品撲滅への取り組み</a></li></ul></section></div>
+           <div class="sc-d975629b-3 fAkvRq"><div class="sc-1a095b48-9 hKKlVg"><div class="mer-spacing-r-16 merTooltip"><div class="targetContainer__f205fbf7"><a target="_blank" rel="noopener noreferrer" class="social-link" href="https://twitter.com/mercari_jp"><div class="merResourceBase" ><svg width="24" height="24" viewBox="0 0 24 24" fill="inherit" xmlns="http://www.w3.org/2000/svg" version="1.1" role="img"><title>X</title><path d="M13.7124 10.5893L20.4133 2.80005H18.8254L13.0071 9.56336L8.35992 2.80005H3L10.0274 13.0274L3 21.1956H4.58799L10.7324 14.0533L15.6401 21.1956H21L13.7121 10.5893H13.7124ZM11.5375 13.1175L10.8255 12.0991L5.16017 3.99547H7.59922L12.1712 10.5353L12.8832 11.5537L18.8262 20.0546H16.3871L11.5375 13.1179V13.1175Z"></path></svg></div></a><div class="positioner__f205fbf7" aria-hidden="true"></div></div></div><div class="merTooltip"><div class="targetContainer__f205fbf7"><a target="_blank" rel="noopener noreferrer" class="social-link" href="https://www.facebook.com/mercarijp"><div class="merResourceBase" style="fill: var(--alias-color-icon-primary-default);"><svg width="24" height="24" viewBox="0 0 24 24" fill="inherit" xmlns="http://www.w3.org/2000/svg" version="1.1" role="img"><title>Facebook</title><path d="M22.9996 12C22.9996 5.92492 18.0747 1 11.9998 1C5.92482 1 1 5.92492 1 12C1 17.1586 4.55161 21.4873 9.34267 22.6762V15.3616H7.07452V12H9.34267V10.5515C9.34267 6.80756 11.0371 5.0722 14.7128 5.0722C15.4097 5.0722 16.6122 5.20904 17.1041 5.34544V8.39244C16.8445 8.36516 16.3935 8.35152 15.8334 8.35152C14.0299 8.35152 13.333 9.03484 13.333 10.8111V12H16.9259L16.3086 15.3616H13.333V22.9195C18.7796 22.2617 23 17.6241 23 12H22.9996Z"></path></svg></div></a><div class="positioner__f205fbf7" aria-hidden="true"></div></div></div></div><div class="sc-1a095b48-9 sc-d975629b-4 boxcis iDKriH"><span class="merText caption__5616e150 secondary__5616e150 rights">© Mercari, Inc.</span></div></div>
+        </footer>
+    </div>
+
+    
+
+
+</body>
+
+</html>
+<script src="../js/index.js"></script>
