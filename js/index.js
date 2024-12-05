@@ -39,7 +39,7 @@ $("#history li").click(function () {
    
 })
 $(".products .item").click(function () {
-    window.location.href='details.html'
+    window.location.href='../html/details.html'
 })
 
 
