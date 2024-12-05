@@ -35,11 +35,11 @@ $(document).ready(function () {
     });
 });
 $("#history li").click(function () {
-    window.location.href='tianciweb/html/search.html'
+    window.location.href='html/search.html'
    
 })
 $(".products .item").click(function () {
-    window.location.href='tianciweb/html/details.html'
+    window.location.href='html/details.html'
 })
 
 
